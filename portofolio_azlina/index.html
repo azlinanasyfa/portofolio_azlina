@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azlina Nasyifa — Keep Growing</title>
+  <meta name="description"
+    content="Personal portfolio and digital journal of Azlina Nasyifa — Pelajar SMK jurusan RPL (Rekayasa Perangkat Lunak). A story of learning, curiosity, and personal growth. Keep growing.">
+
+  <!-- Google Fonts: Caveat (700), Patrick Hand, Special Elite -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Special+Elite&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor Elements (Desktop Only) -->
+  <div class="custom-cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- Interactive Scrapbook Stamp Palette (Floating Creative Tool) -->
+  <aside class="scrapbook-toolbar" id="scrapbookToolbar" aria-label="Interactive Scrapbook Tools">
+    <button class="toolbar-toggle-btn" id="toolbarToggle" title="Buka Scrapbook Sticker Kit"
+      aria-label="Toggle Scrapbook Stickers">
+      <span class="toolbar-icon">🎨</span>
+      <span class="toolbar-hint">Sticker Kit</span>
+    </button>
+    <div class="toolbar-drawer" id="toolbarDrawer" hidden>
+      <div class="drawer-header">
+        <span class="drawer-title">Scrapbook Stamps</span>
+        <span class="drawer-sub">Klik lalu klik di halaman!</span>
+      </div>
+      <div class="sticker-selector-row">
+        <button class="sticker-option active" data-sticker="leaf" title="Sprout Leaf">🌿</button>
+        <button class="sticker-option" data-sticker="star" title="Sparkle Star">✦</button>
+        <button class="sticker-option" data-sticker="flower" title="Flower Bloom">🌸</button>
+        <button class="sticker-option" data-sticker="stamp-grow" title="KEEP GROWING Stamp">🌱</button>
+        <button class="sticker-option" data-sticker="heart" title="Warm Heart">💛</button>
+      </div>
+      <div class="drawer-actions">
+        <button class="btn-tool-sm" id="clearStampsBtn">Hapus Semua</button>
+        <button class="btn-tool-sm" id="soundToggleBtn" title="Toggle Suara Lembut">Suara: Off 🔇</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Azlina Nasyifa Home">
+        <span class="logo-name">AZLINA NASYIFA</span>
+        <span class="logo-leaf">🌿</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#personality" class="nav-link">DISCOVER</a>
+        <a href="#reading" class="nav-link">MOMENTS</a>
+        <a href="#growth" class="nav-link">GROWTH</a>
+        <a href="#journey" class="nav-link">JOURNEY</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-pill btn-nav magnetic-btn">Say Hi! ✍️</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Large Typography & Narrative -->
+        <div class="hero-content">
+          <div class="hero-label-badge">
+            <span class="washi-tape washi-yellow"></span>
+            <span class="hero-meta-label">PERSONAL PORTFOLIO / 2026</span>
+          </div>
+
+          <h1 class="hero-greeting">
+            HI, I'M <span class="highlight-azlina">AZLINA.</span>
+          </h1>
+
+          <div class="hero-statement-wrapper">
+            <div class="statement-stamp">
+              <span class="stamp-bracket">[</span>
+              <span class="hero-main-statement">KEEP GROWING.</span>
+              <span class="stamp-bracket">]</span>
+            </div>
+          </div>
+
+          <p class="hero-supporting-text">
+            Seorang pelajar <strong>RPL — Rekayasa Perangkat Lunak</strong> yang sedang terus belajar, mencoba, dan
+            berkembang.
+          </p>
+
+          <p class="hero-english-statement">
+            <em>Still learning. Still becoming.</em>
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#about" class="btn-dark btn-pill magnetic-btn">
+              <span>EXPLORE MY STORY</span>
+              <span class="btn-arrow">↓</span>
+            </a>
+            <a href="#growth" class="btn-accent btn-pill magnetic-btn">
+              <span>My Growth Note</span>
+              <span class="btn-icon">🌱</span>
+            </a>
+          </div>
+
+          <!-- Handwritten Micro-Note on Hero -->
+          <div class="hero-handwritten-note">
+            <svg class="doodle-arrow" width="48" height="36" viewBox="0 0 48 36" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 28 C14 26, 24 10, 42 6" stroke="#d9584d" stroke-width="2.5" stroke-linecap="round"
+                stroke-dasharray="2 3" />
+              <path d="M34 4 L43 6 L40 14" stroke="#d9584d" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="handwritten-caption">a little digital journal of me</span>
+          </div>
+        </div>
+
+        <!-- Right: Organic Editorial Scrapbook Visual -->
+        <div class="hero-visual">
+          <div class="scrapbook-canvas" id="heroCanvas">
+            <!-- Organic Background Shapes & Layers -->
+            <div class="paper-backdrop-layer"></div>
+            <div class="paper-backdrop-tint"></div>
+
+            <!-- Polaroid / Photo Placeholder Card -->
+            <div class="polaroid-card" id="polaroidCard">
+              <span class="washi-tape washi-tape-top"></span>
+
+              <div class="polaroid-media">
+                <!-- Replaceable Photo Area with Live File Input Preview -->
+                <div class="photo-placeholder-box" id="photoDisplayBox">
+                  <div class="placeholder-graphic">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#b8912f" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z" />
+                      <path d="M3 21a9 9 0 0 1 18 0" />
+                      <circle cx="18.5" cy="5.5" r="2.5" fill="#ffe45e" />
+                    </svg>
+                    <span class="placeholder-tag">[YOUR PHOTO HERE]</span>
+                    <span class="placeholder-sub">Klik tombol di bawah untuk ganti foto</span>
+                  </div>
+                  <img id="userPhotoImg" class="user-uploaded-photo" alt="Azlina Nasyifa" hidden>
+                </div>
+              </div>
+
+              <!-- Upload Button to preview Azlina's real photo dynamically -->
+              <div class="polaroid-caption-row">
+                <span class="polaroid-text">Azlina Nasyifa • 2026</span>
+                <label for="photoUploadInput" class="btn-change-photo" title="Preview Fotomu">
+                  <span>📷 Pasang Foto</span>
+                </label>
+                <input type="file" id="photoUploadInput" accept="image/*" class="visually-hidden">
+              </div>
+            </div>
+
+            <!-- Organic Floating Scrapbook Elements -->
+            <div class="scrapbook-badge badge-leaf parallax-elem" data-speed="0.08">
+              <span class="badge-icon">🌿</span>
+              <span class="badge-label">pelajar SMK</span>
+            </div>
+
+            <div class="scrapbook-badge badge-rpl parallax-elem" data-speed="-0.06">
+              <span class="badge-tag">MAJOR</span>
+              <span class="badge-value">RPL</span>
+            </div>
+
+            <div class="scrapbook-note-tag parallax-elem" data-speed="0.05">
+              <span class="washi-tape washi-pink washi-mini"></span>
+              <span class="note-quote">“a work in progress”</span>
+            </div>
+
+            <!-- Hand-drawn Botanical SVG Accent -->
+            <div class="decorative-botanical parallax-elem" data-speed="0.1" aria-hidden="true">
+              <svg width="110" height="120" viewBox="0 0 110 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 110 C25 80, 45 40, 95 15" stroke="#5d5744" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M40 70 C30 60, 30 45, 45 42 C52 55, 46 68, 40 70 Z" fill="#c2e5f7" stroke="#191712"
+                  stroke-width="1.8" />
+                <path d="M65 48 C75 35, 90 40, 88 55 C78 58, 68 53, 65 48 Z" fill="#ffc9dc" stroke="#191712"
+                  stroke-width="1.8" />
+                <path d="M85 24 C95 12, 105 20, 102 32 C92 34, 85 28, 85 24 Z" fill="#ffe45e" stroke="#191712"
+                  stroke-width="1.8" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Botanical Scroll Indicator -->
+      <div class="scroll-cue">
+        <a href="#about" aria-label="Scroll down">
+          <span class="scroll-text">scroll to read</span>
+          <span class="scroll-sprout">🌱</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 01 — ABOUT ME -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge-row">
+          <span class="section-number-pill">01 / ABOUT ME</span>
+        </div>
+
+        <div class="editorial-about-grid">
+          <!-- Journal Sheet with Handwritten feel -->
+          <div class="journal-paper-card reveal-on-scroll">
+            <span class="paper-clip" aria-hidden="true"></span>
+            <span class="washi-tape washi-blue washi-card-edge"></span>
+
+            <h2 class="section-title">A LITTLE ABOUT ME.</h2>
+
+            <div class="journal-entry-body">
+              <p class="journal-paragraph intro-lead">
+                Aku adalah <strong>Azlina Nasyifa</strong>, seorang pelajar SMK jurusan <strong>RPL — Rekayasa Perangkat
+                  Lunak</strong>.
+              </p>
+
+              <p class="journal-paragraph">
+                Aku masih dalam proses mengenal banyak hal, mencoba hal baru, dan menemukan apa yang ingin terus aku
+                kembangkan.
+              </p>
+
+              <blockquote class="journal-highlight-quote">
+                “I don't have everything figured out yet — and that's okay.”
+              </blockquote>
+
+              <p class="journal-paragraph">
+                Bagiku, proses belajar bukan tentang menjadi sempurna.<br>
+                <span class="emphasis-script">It's about becoming a little better than yesterday.</span>
+              </p>
+            </div>
+
+            <div class="journal-signature-row">
+              <span class="journal-date">Catatan Harian • Azlina</span>
+              <span class="journal-stamp">🌿 keep growing</span>
+            </div>
+          </div>
+
+          <!-- Editorial Sidebar / Persona Note -->
+          <div class="about-sidebar-column">
+            <div class="sticky-note-card note-warm reveal-on-scroll" style="--delay: 0.15s">
+              <span class="pushpin" aria-hidden="true">📌</span>
+              <h3 class="sticky-title">My Current Status</h3>
+              <p class="sticky-text">
+                Pelajar SMK aktif di jurusan <strong>RPL / Rekayasa Perangkat Lunak</strong>. Menikmati proses belajar
+                memahami logika dan merangkai ide kreatif.
+              </p>
+            </div>
+
+            <div class="sticky-note-card note-tint reveal-on-scroll" style="--delay: 0.3s">
+              <span class="washi-tape washi-yellow washi-corner"></span>
+              <h3 class="sticky-title">A Simple Philosophy</h3>
+              <p class="sticky-text">
+                Pertumbuhan tidak selalu diukur dari hal-hal raksasa. Kadang, kemajuan terbesar adalah keberanian untuk
+                tetap mencoba setiap hari.
+              </p>
+              <div class="plant-progress-micro">
+                <span>🌱 benih</span> → <span>🌿 tumbuh</span> → <span>✨ mekar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — PERSONALITY / WHAT MAKES ME, ME? -->
+    <section class="section personality-section" id="personality">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-tag">personality &amp; strengths</span>
+          <h2 class="section-title-large">WHAT MAKES ME, ME?</h2>
+          <p class="section-subtitle">Empat hal yang menggambarkan cara aku melihat dunia dan terus bertumbuh.</p>
+        </div>
+
+        <div class="traits-editorial-grid">
+          <!-- Card 1: CURIOUS -->
+          <article class="trait-card trait-card-curious reveal-on-scroll" style="--delay: 0.1s">
+            <div class="trait-card-top">
+              <span class="trait-icon">🔍</span>
+              <span class="trait-index">01</span>
+            </div>
+            <h3 class="trait-heading">CURIOUS</h3>
+            <p class="trait-desc">
+              Suka belajar dan mencoba hal baru. Rasa penasaran selalu jadi pintu pertama untuk mengeksplorasi banyak
+              hal yang belum pernah aku tahu sebelumnya.
+            </p>
+            <div class="trait-footer">
+              <span class="trait-badge">Learning new things</span>
+            </div>
+          </article>
+
+          <!-- Card 2: SPEAK -->
+          <article class="trait-card trait-card-speak reveal-on-scroll" style="--delay: 0.2s">
+            <div class="trait-card-top">
+              <span class="trait-icon">🎙️</span>
+              <span class="trait-index">02</span>
+            </div>
+            <h3 class="trait-heading">SPEAK</h3>
+            <p class="trait-desc">
+              Nyaman melakukan public speaking dan menyampaikan sesuatu di depan orang lain. Bercerita dan berbagi
+              perspektif adalah caraku terhubung secara bermakna.
+            </p>
+            <div class="trait-footer">
+              <span class="trait-badge">Public speaking</span>
+            </div>
+          </article>
+
+          <!-- Card 3: CREATE -->
+          <article class="trait-card trait-card-create reveal-on-scroll" style="--delay: 0.3s">
+            <div class="trait-card-top">
+              <span class="trait-icon">💡</span>
+              <span class="trait-index">03</span>
+            </div>
+            <h3 class="trait-heading">CREATE</h3>
+            <p class="trait-desc">
+              Suka mengeksplorasi ide dan membuat sesuatu secara kreatif. Menemukan kesenangan ketika imajinasi dan ide
+              bisa dituangkan ke dalam bentuk yang nyata.
+            </p>
+            <div class="trait-footer">
+              <span class="trait-badge">Creativity</span>
+            </div>
+          </article>
+
+          <!-- Card 4: GROW -->
+          <article class="trait-card trait-card-grow reveal-on-scroll" style="--delay: 0.4s">
+            <div class="trait-card-top">
+              <span class="trait-icon">🌱</span>
+              <span class="trait-index">04</span>
+            </div>
+            <h3 class="trait-heading">GROW</h3>
+            <p class="trait-desc">
+              Percaya bahwa kemampuan dan diri sendiri bisa terus berkembang. Tidak ada batasan tetap selama kita
+              memberi ruang untuk belajar dan memperbaiki diri.
+            </p>
+            <div class="trait-footer">
+              <span class="trait-badge">Growth mindset</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02 — HOBBY / READING -->
+    <section class="section reading-section" id="reading">
+      <div class="container">
+        <div class="section-badge-row">
+          <span class="section-number-pill">02 / LITTLE THINGS</span>
+        </div>
+
+        <div class="reading-nook-layout">
+          <!-- Text Column -->
+          <div class="reading-narrative reveal-on-scroll">
+            <h2 class="section-title-large">READING.</h2>
+
+            <p class="reading-quote-lead">
+              Salah satu hal yang aku suka adalah membaca.
+            </p>
+
+            <p class="reading-body">
+              Di antara rutinitas harian dan tugas belajar, membuka halaman buku selalu memberi ruang tenang untuk
+              bernapas dan mendengar pikiran sendiri.
+            </p>
+
+            <div class="reading-pill-highlight">
+              <span class="pill-quote-icon">“</span>
+              <span class="pill-quote-text">Sometimes, a good book is simply a quiet place to pause.</span>
+            </div>
+
+            <p class="reading-body">
+              Dari buku, aku belajar melihat dunia dari sudut pandang yang berbeda, menyerap ide-ide hangat, dan melatih
+              imajinasi agar tetap hidup.
+            </p>
+
+            <div class="reading-action-interactive">
+              <button class="btn-bookmark magnetic-btn" id="flipPageBtn" title="Buka Catatan Bacaan Lainnya">
+                <span>Balik Halaman Jurnal 📖</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Visual Reading Scrapbook Desk / Open Book -->
+          <div class="reading-visual-composition reveal-on-scroll" style="--delay: 0.2s">
+            <div class="book-desk-stage">
+              <!-- Open Book Simulation with Bookmark Ribbon -->
+              <div class="open-book-card" id="openBook">
+                <div class="bookmark-ribbon" aria-hidden="true">
+                  <span class="ribbon-tail"></span>
+                </div>
+
+                <div class="book-page book-left-page">
+                  <span class="page-corner-decor">☕</span>
+                  <span class="page-date">02. MEMBACA</span>
+                  <h4 class="page-title">Ruang Hening</h4>
+                  <p class="page-snippet" id="bookQuoteSnippet">
+                    “A quiet moment, a good book, and a little time to myself.”
+                  </p>
+                  <span class="page-number">hal. 24</span>
+                </div>
+
+                <div class="book-spine-crease"></div>
+
+                <div class="book-page book-right-page">
+                  <span class="washi-tape washi-mini washi-blue"></span>
+                  <h4 class="page-title">Refleksi</h4>
+                  <p class="page-snippet" id="bookReflectionSnippet">
+                    Membaca bukan tentang seberapa cepat kita selesai, melainkan apa yang tersisa di hati setelah buku
+                    itu ditutup.
+                  </p>
+                  <div class="book-doodle-leaf">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#b8912f" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 2L12 22" />
+                      <path d="M12 7C8 7 4 10 4 15C8 15 12 12 12 7Z" fill="#f6e496" />
+                      <path d="M12 12C16 12 20 15 20 20C16 20 12 17 12 12Z" fill="#ffc9dc" />
+                    </svg>
+                  </div>
+                  <span class="page-number">hal. 25</span>
+                </div>
+              </div>
+
+              <!-- Coffee Cup & Journal Pen Details -->
+              <div class="reading-floating-stamp stamp-coffee" aria-hidden="true">
+                <span>☕ hangat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — EXPERIENCE / GREEN MOMENTS (ADIWIYATA) -->
+    <section class="section green-moments-section" id="moments">
+      <div class="container">
+        <div class="green-editorial-wrapper reveal-on-scroll">
+          <div class="green-content-col">
+            <span class="green-subtitle-pill">A little experience that stayed with me.</span>
+            <h2 class="section-title-large green-title">GREEN MOMENTS.</h2>
+
+            <p class="green-text-lead">
+              Aku pernah aktif dalam kegiatan <strong>Adiwiyata</strong> dan aktivitas yang berkaitan dengan lingkungan.
+            </p>
+
+            <blockquote class="green-quote">
+              “Small actions, meaningful changes.”
+            </blockquote>
+
+            <p class="green-text-desc">
+              Dari pengalaman ini, aku belajar bahwa kepedulian terhadap lingkungan dimulai dari kebiasaan-kebiasaan
+              kecil yang konsisten. Merawat tanaman dan menjaga ruang belajar mengajarkanku tentang kesabaran, proses
+              tumbuh yang tidak instan, dan pentingnya saling menjaga.
+            </p>
+
+            <div class="green-tags-row">
+              <span class="eco-tag">🌿 Adiwiyata</span>
+              <span class="eco-tag">🌱 Peduli Lingkungan</span>
+              <span class="eco-tag">✨ Aksi Kecil Nyata</span>
+            </div>
+          </div>
+
+          <div class="green-visual-col">
+            <div class="herbarium-frame">
+              <span class="washi-tape washi-card-top washi-yellow"></span>
+
+              <!-- Handcrafted Botanical Garden Vector Composition -->
+              <div class="herbarium-illustration" aria-hidden="true">
+                <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="sprout-svg-hero">
+                  <path d="M100 220 C100 160, 95 120, 100 50" stroke="#5d5744" stroke-width="4"
+                    stroke-linecap="round" />
+                  <!-- Branch Left -->
+                  <path d="M98 150 C80 140, 50 145, 35 125" stroke="#5d5744" stroke-width="3" stroke-linecap="round" />
+                  <path d="M35 125 C30 110, 48 100, 60 115 C55 130, 40 130, 35 125 Z" fill="#b8912f" opacity="0.85" />
+
+                  <!-- Branch Right -->
+                  <path d="M99 110 C120 95, 150 100, 165 85" stroke="#5d5744" stroke-width="3" stroke-linecap="round" />
+                  <path d="M165 85 C175 70, 160 60, 145 72 C148 85, 160 88, 165 85 Z" fill="#d9584d" opacity="0.85" />
+
+                  <!-- Top Bud / Leaf -->
+                  <path d="M100 50 C90 30, 100 15, 108 28 C115 40, 105 50, 100 50 Z" fill="#ffe45e" />
+                  <circle cx="100" cy="50" r="4" fill="#191712" />
+                  <!-- Ground Pot/Soil Base -->
+                  <ellipse cx="100" cy="220" rx="45" ry="12" fill="#5d5744" opacity="0.2" />
+                </svg>
+              </div>
+
+              <div class="herbarium-label">
+                <span class="herbarium-title">Spesimen: Harapan Hijau</span>
+                <span class="herbarium-latin">Kegiatan Lingkungan &amp; Adiwiyata</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — ACHIEVEMENT / ONE OF MY LITTLE WINS -->
+    <section class="section achievement-section" id="achievement">
+      <div class="container">
+        <div class="achievement-card-editorial reveal-on-scroll">
+          <div class="achievement-left-number">
+            <div class="giant-num-box">
+              <span class="giant-num">02</span>
+              <span class="giant-num-shadow" aria-hidden="true">02</span>
+            </div>
+            <div class="win-ribbon-tag">
+              <span class="ribbon-star">★</span>
+              <span class="ribbon-label">SECOND PLACE</span>
+              <span class="ribbon-star">★</span>
+            </div>
+          </div>
+
+          <div class="achievement-right-story">
+            <span class="achievement-meta">Satu angkatan — Kelas 8 SMP</span>
+            <h2 class="section-title">ONE OF MY LITTLE WINS.</h2>
+
+            <p class="achievement-narrative-p lead">
+              Salah satu pencapaian yang pernah aku dapatkan adalah menjadi <strong>juara 2 satu angkatan saat kelas 8
+                SMP</strong>.
+            </p>
+
+            <p class="achievement-narrative-p">
+              Momen ini menjadi salah satu pengingat berharga bagiku: bahwa usaha, ketekunan, dan kemauan untuk terus
+              mencoba benar-benar membawa hasil.
+            </p>
+
+            <blockquote class="achievement-quote">
+              “It became one of those little moments that reminded me that effort does matter.”
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — PERSONAL GROWTH / BETTER THAN YESTERDAY -->
+    <section class="section growth-section" id="growth">
+      <div class="container">
+        <div class="growth-header-block reveal-on-scroll">
+          <span class="section-script-tag">the heart of this journey</span>
+          <h2 class="growth-main-statement">BETTER THAN YESTERDAY.</h2>
+          <p class="growth-intro-copy">
+            Menurutku, pencapaian tidak selalu harus berupa penghargaan.
+          </p>
+          <p class="growth-reflection-quote">
+            “Sometimes, the biggest progress is simply realizing that you're not the same person you were yesterday.”
+          </p>
+        </div>
+
+        <!-- Interactive Growth Progression Metaphor (Seed → Sprout → Leaf → Branch) -->
+        <div class="growth-metaphor-stage reveal-on-scroll" style="--delay: 0.2s">
+          <div class="metaphor-controls" role="tablist" aria-label="Tahapan Pertumbuhan">
+            <button class="stage-tab-btn active" data-stage="1" role="tab" aria-selected="true">
+              <span class="tab-emoji">🌱</span>
+              <span class="tab-title">01 Seed</span>
+            </button>
+            <button class="stage-tab-btn" data-stage="2" role="tab" aria-selected="false">
+              <span class="tab-emoji">🌿</span>
+              <span class="tab-title">02 Sprout</span>
+            </button>
+            <button class="stage-tab-btn" data-stage="3" role="tab" aria-selected="false">
+              <span class="tab-emoji">🍃</span>
+              <span class="tab-title">03 Leaf</span>
+            </button>
+            <button class="stage-tab-btn" data-stage="4" role="tab" aria-selected="false">
+              <span class="tab-emoji">🌳</span>
+              <span class="tab-title">04 Branch</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Stage Card Content -->
+          <div class="stage-display-card" id="growthStageCard">
+            <div class="stage-visual-container">
+              <div class="stage-icon-circle" id="stageIcon">🌱</div>
+            </div>
+            <div class="stage-text-container">
+              <h3 class="stage-heading" id="stageTitle">Mulai dari Hal Kecil</h3>
+              <p class="stage-body" id="stageBody">
+                Setiap pertumbuhan selalu berawal dari sebuah benih keingintahuan: berani memulai meski masih merasa
+                belum tahu apa-apa.
+              </p>
+              <div class="stage-motto-tag" id="stageMotto">“Growth begins with curiosity.”</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grand Central Visual Statement -->
+        <div class="grand-growth-statement reveal-on-scroll" style="--delay: 0.3s">
+          <div class="growth-stamp-banner">
+            <span class="banner-leaf-left">🌿</span>
+            <span class="banner-core-text">KEEP GROWING.</span>
+            <span class="banner-leaf-right">🌿</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — PERSONAL JOURNEY -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-script-tag">a continuous path</span>
+          <h2 class="section-title-large">MY PERSONAL JOURNEY.</h2>
+          <p class="section-subtitle">
+            Lima titik langkah yang menyatukan caraku belajar, berekspresi, dan berkembang.
+          </p>
+        </div>
+
+        <!-- Growing SVG Branch Path connecting Journey Steps -->
+        <div class="journey-timeline-container">
+          <!-- Central Growing SVG Line -->
+          <div class="journey-svg-track" aria-hidden="true">
+            <svg class="growing-branch-svg" id="journeySvg" preserveAspectRatio="none" viewBox="0 0 40 1000">
+              <path id="journeyBranchPath" d="M20 0 Q28 250 12 500 T20 1000" stroke="#b8912f" stroke-width="4"
+                stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+
+          <div class="journey-steps-list">
+            <!-- Step 01: LEARN -->
+            <div class="journey-step-row reveal-on-scroll">
+              <div class="step-marker">
+                <span class="step-dot">01</span>
+                <span class="step-sprout-icon">🌱</span>
+              </div>
+              <div class="step-card card-warm">
+                <span class="step-subhead">01 / DISCOVERY</span>
+                <h3 class="step-title">LEARN</h3>
+                <p class="step-text">
+                  Membuka diri untuk menyerap ilmu baru, baik di bangku sekolah jurusan RPL maupun dari pengalaman hidup
+                  sehari-hari.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02: EXPLORE -->
+            <div class="journey-step-row step-row-alt reveal-on-scroll">
+              <div class="step-marker">
+                <span class="step-dot">02</span>
+                <span class="step-sprout-icon">🌿</span>
+              </div>
+              <div class="step-card card-tint">
+                <span class="step-subhead">02 / CURIOSITY</span>
+                <h3 class="step-title">EXPLORE</h3>
+                <p class="step-text">
+                  Tidak takut keluar dari zona nyaman. Mengamati lingkungan, membaca buku-buku baru, dan mencoba
+                  perspektif yang beragam.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03: SPEAK -->
+            <div class="journey-step-row reveal-on-scroll">
+              <div class="step-marker">
+                <span class="step-dot">03</span>
+                <span class="step-sprout-icon">🎙️</span>
+              </div>
+              <div class="step-card card-warm">
+                <span class="step-subhead">03 / VOICE</span>
+                <h3 class="step-title">SPEAK</h3>
+                <p class="step-text">
+                  Menyalurkan gagasan melalui public speaking. Berani bersuara di depan umum dan menyampaikan apa yang
+                  bermakna.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04: CREATE -->
+            <div class="journey-step-row step-row-alt reveal-on-scroll">
+              <div class="step-marker">
+                <span class="step-dot">04</span>
+                <span class="step-sprout-icon">💡</span>
+              </div>
+              <div class="step-card card-tint">
+                <span class="step-subhead">04 / EXPRESSION</span>
+                <h3 class="step-title">CREATE</h3>
+                <p class="step-text">
+                  Menggabungkan daya imajinasi dan logika untuk merancang solusi serta karya kreatif yang bermanfaat.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 05: GROW -->
+            <div class="journey-step-row reveal-on-scroll">
+              <div class="step-marker">
+                <span class="step-dot">05</span>
+                <span class="step-sprout-icon">✨</span>
+              </div>
+              <div class="step-card card-accent-glow">
+                <span class="step-subhead">05 / EVOLUTION</span>
+                <h3 class="step-title">GROW</h3>
+                <p class="step-text">
+                  Menjadi versi yang lebih baik dari hari kemarin. Merayakan setiap langkah kecil dalam perjalanan
+                  panjang ini.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — WHAT'S NEXT? -->
+    <section class="section whats-next-section" id="whats-next">
+      <div class="container">
+        <div class="whats-next-card reveal-on-scroll">
+          <span class="washi-tape washi-center washi-pink"></span>
+
+          <span class="section-script-tag">looking ahead</span>
+          <h2 class="section-title-large">WHAT'S NEXT?</h2>
+
+          <div class="whats-next-body">
+            <p class="whats-next-p lead">
+              Aku belum tahu semua jawaban tentang masa depan.
+            </p>
+            <p class="whats-next-p">
+              <em>And maybe I don't need to know everything right now.</em>
+            </p>
+            <p class="whats-next-p">
+              Yang penting, aku tetap mau belajar, mencoba, dan berkembang.
+            </p>
+          </div>
+
+          <div class="next-trio-typography">
+            <div class="trio-item">
+              <span class="trio-star">✦</span>
+              <span class="trio-text">KEEP LEARNING.</span>
+            </div>
+            <div class="trio-item">
+              <span class="trio-star">✦</span>
+              <span class="trio-text">KEEP EXPLORING.</span>
+            </div>
+            <div class="trio-item highlight-trio">
+              <span class="trio-star">✦</span>
+              <span class="trio-text">KEEP GROWING.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION — CONTACT / LET'S SAY HI -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-editorial-layout">
+          <!-- Left: Personal Closing Greeting -->
+          <div class="contact-story-panel reveal-on-scroll">
+            <span class="section-script-tag">friendly note</span>
+            <h2 class="section-title-large">LET'S SAY HI.</h2>
+
+            <p class="contact-greeting-main">
+              Thanks for being here.
+            </p>
+
+            <p class="contact-greeting-sub">
+              Sampai bertemu di cerita berikutnya.
+            </p>
+
+            <div class="contact-scrapbook-note">
+              <span class="paper-pin">📌</span>
+              <p class="note-quote-text">
+                “Every connection is a new leaf in our personal journal.”
+              </p>
+            </div>
+
+            <!-- Editable Social & Contact Placeholders -->
+            <div class="contact-placeholders-list">
+              <div class="placeholder-item-card">
+                <span class="ph-icon">✉️</span>
+                <div class="ph-info">
+                  <span class="ph-label">EMAIL</span>
+                  <span class="ph-value" id="emailVal">[your.email@example.com]</span>
+                </div>
+                <button class="btn-copy-mini magnetic-btn" id="copyEmailBtn" title="Copy Email">
+                  <span>Salin 📋</span>
+                </button>
+              </div>
+
+              <div class="placeholder-item-card">
+                <span class="ph-icon">📷</span>
+                <div class="ph-info">
+                  <span class="ph-label">INSTAGRAM</span>
+                  <span class="ph-value">[@yourinstagram]</span>
+                </div>
+                <span class="ph-badge">Placeholder</span>
+              </div>
+
+              <div class="placeholder-item-card">
+                <span class="ph-icon">💻</span>
+                <div class="ph-info">
+                  <span class="ph-label">GITHUB</span>
+                  <span class="ph-value">[github.com/username]</span>
+                </div>
+                <span class="ph-badge">Placeholder</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Scrapbook Guestpad / Message Sender -->
+          <div class="contact-message-panel reveal-on-scroll" style="--delay: 0.2s">
+            <div class="guestpad-card">
+              <span class="washi-tape washi-card-top washi-blue"></span>
+
+              <h3 class="guestpad-title">Tinggalkan Pesan Manis 💌</h3>
+              <p class="guestpad-desc">Punya saran buku, kata penyemangat, atau sekadar ingin menyapa?</p>
+
+              <form id="contactJournalForm" novalidate>
+                <div class="form-field-group">
+                  <label for="senderName" class="form-label">Nama Kamu</label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="contoh: Teman Baik"
+                    required>
+                  <span class="field-error-msg" id="nameError"></span>
+                </div>
+
+                <div class="form-field-group">
+                  <label for="senderEmail" class="form-label">Email Kamu</label>
+                  <input type="email" id="senderEmail" name="email" class="form-input"
+                    placeholder="contoh: kawan@email.com" required>
+                  <span class="field-error-msg" id="emailError"></span>
+                </div>
+
+                <div class="form-field-group">
+                  <label for="senderMessage" class="form-label">Pesan untuk Azlina</label>
+                  <textarea id="senderMessage" name="message" rows="4" class="form-textarea"
+                    placeholder="Tuliskan sapaan hangat atau pesan penyemangat di sini..." required></textarea>
+                  <span class="field-error-msg" id="msgError"></span>
+                </div>
+
+                <button type="submit" class="btn-dark btn-pill magnetic-btn form-submit-btn">
+                  <span>KIRIM SAPAAN ✦</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content-wrap">
+      <div class="footer-journal-signature">
+        <span class="footer-author-name">AZLINA NASYIFA</span>
+        <span class="footer-divider">•</span>
+        <span class="footer-motto-strong">KEEP GROWING.</span>
+        <span class="footer-divider">•</span>
+        <span class="footer-year">© 2026</span>
+      </div>
+
+      <p class="footer-closing-quote">
+        “See you in the next chapter.”
+      </p>
+
+      <div class="footer-back-top">
+        <a href="#hero" class="back-to-top-link magnetic-btn">
+          <span>kembali ke atas</span>
+          <span class="top-arrow">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-bubble" id="toastNotification" role="status" aria-live="polite">
+    <span class="toast-icon">🌱</span>
+    <span class="toast-message" id="toastMessage">Pesan berhasil dicatat!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
